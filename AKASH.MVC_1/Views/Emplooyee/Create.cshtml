@@ -1,0 +1,29 @@
+﻿@model AKASH.MVC_1.Models.Employee
+@{
+}
+<div class="row">
+    <div class="col-6 offset-3">
+        <form asp-action="Create"asp-controller="Employee" method="post">
+            <div class="form-group">
+                <lable asp-for="Name"></lable>
+                <input asp-for="Name" class="form-control" />
+            </div>
+            <div class="form-group">
+                <lable asp-for="Email"></lable>
+                <input asp-for="Email" class="form-control" />
+            </div>
+            <div class="form-group">
+                <lable asp-for="Mobile"></lable>
+                <input asp-for="Mobile" class="form-control" />
+            </div>
+            <div class="form-group">
+                <lable asp-for="Address"></lable>
+                <input asp-for="Address" class="form-control" />
+            </div>
+            <div class="form-group">
+                <button type="Submit" class="btn but-
+                        success">  Submit</button>
+            </div>
+        </form>
+    </div>
+</div>

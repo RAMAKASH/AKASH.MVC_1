@@ -1,0 +1,26 @@
+﻿@model IEnumerable<AKASH.MVC_1.Models.Customer>
+@{
+}
+
+@if (Model.Count() <= 0)
+{
+<p class="text-center text-danger">Customer was not found at this location !</p>
+}
+else
+{
+<table class="table table-bordered">
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+    </tr>
+    @foreach (var Cust in Model)
+    {
+        <tr>
+            <td> @Cust.Name</td>
+            
+            <td>@Cust.Email</td>
+        </tr>
+    }                                                          
+
+</table>
+}
